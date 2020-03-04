@@ -20,6 +20,32 @@ Go into the application folder and run:
 flutter run -d chrome
 ```
 
+## Folders
+
+### Source
+
+- lib
+
+### Tests
+
+- test
+
+### Platform specific
+
+- android
+- ios
+- web
+
+## Source
+
+The root is called `main.dart`.
+
+The main function looks like this:
+
+```dart
+void main() => runApp(MyApp());
+```
+
 ## Licence
 
 European Union Public Licence version 1.2
