@@ -1,3 +1,7 @@
+#################
+## Dart
+#################
+
 # See https://www.dartlang.org/guides/libraries/private-files
 
 # Files and directories created by pub
@@ -19,3 +23,20 @@ doc/api/
 *.js_
 *.js.deps
 *.js.map
+
+#################
+## Other
+#################
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Mac crap
+.DS_Store
