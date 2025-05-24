@@ -1,12 +1,18 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: MyPage(),
+    return WidgetsApp(
+      color: const Color(0xFFFFFFFF),
+      builder: (context, _) {
+        return Directionality(
+          textDirection: TextDirection.ltr,
+          child: MyPage(),
+        );
+      },
     );
   }
 }
@@ -14,11 +20,6 @@ class MyApp extends StatelessWidget {
 class MyPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Text(
-        'Hello Flutter!',
-        textDirection: TextDirection.ltr,
-      ),
-    );
+    return Text('Hello Flutter!');
   }
 }
