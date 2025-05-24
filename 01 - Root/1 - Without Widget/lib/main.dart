@@ -1,12 +1,5 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 void main() {
-  runApp(
-    Center(
-      child: Text(
-        'Hello Flutter!',
-        textDirection: TextDirection.ltr,
-      ),
-    ),
-  );
+  runApp(Text('Hello Flutter!', textDirection: TextDirection.ltr));
 }
