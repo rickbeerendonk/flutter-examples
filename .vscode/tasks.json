@@ -1,0 +1,53 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start",
+      "runOptions": {
+        "instanceLimit": 3,
+        "reevaluateOnRerun": true
+      },
+      "type": "shell",
+      "command": "flutter",
+      "args": ["run", "-d", "chrome", "--target=lib/main.dart"],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": true
+      }
+    },
+    {
+      "label": "Start-Without-Debugging",
+      "runOptions": {
+        "instanceLimit": 3,
+        "reevaluateOnRerun": true
+      },
+      "type": "shell",
+      "command": "flutter",
+      "args": ["run", "-d", "chrome", "--profile", "--target=lib/main.dart"],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": false
+      }
+    }
+  ]
+}
