@@ -34,8 +34,8 @@ doc/api/
 ## Temp Files
 #################
 
-.temp/
-.tmp/
+temp/
+tmp/
 
 #################
 ## Other
