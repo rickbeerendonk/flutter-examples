@@ -29,6 +29,7 @@ doc/api/
 #################
 
 .idea/
+demo.iml
 
 #################
 ## Temp Files
