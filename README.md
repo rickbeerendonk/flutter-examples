@@ -14,6 +14,14 @@ See: https://docs.flutter.dev/get-started/install
 flutter run -d chrome
 ```
 
+## Other platforms
+
+Most examples only defined `web` as a platform. To add other platforms run (see https://docs.flutter.dev/platform-integration/desktop#add-desktop-support-to-an-existing-flutter-app):
+
+```cmd
+flutter create --platforms=windows,macos,linux .
+```
+
 ## Licence
 
 European Union Public Licence version 1.2
