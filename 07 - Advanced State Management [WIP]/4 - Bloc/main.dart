@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 abstract class CounterEvent {}
+
 class Increment extends CounterEvent {}
 
 class CounterBloc extends Bloc<CounterEvent, int> {
@@ -11,12 +12,7 @@ class CounterBloc extends Bloc<CounterEvent, int> {
 }
 
 void main() {
-  runApp(
-    BlocProvider(
-      create: (_) => CounterBloc(),
-      child: const MyApp(),
-    ),
-  );
+  runApp(BlocProvider(create: (_) => CounterBloc(), child: const MyApp()));
 }
 
 class MyApp extends StatelessWidget {

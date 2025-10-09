@@ -11,10 +11,7 @@ class Counter with ChangeNotifier {
 
 void main() {
   runApp(
-    ChangeNotifierProvider(
-      create: (_) => Counter(),
-      child: const MyApp(),
-    ),
+    ChangeNotifierProvider(create: (_) => Counter(), child: const MyApp()),
   );
 }
 

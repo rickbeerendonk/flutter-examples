@@ -1,15 +1,13 @@
 // European Union Public License version 1.2
-// Copyright © 2025 Rick Beerendonk
+// Copyright © 2020 Rick Beerendonk
 
-import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
-void main() {
-  runApp(Top(color: Colors.red));
-}
+void main() => runApp(const Top(color: const Color(0xFFFF0000)));
 
 class Top extends StatelessWidget {
   final Color color;
-  const Top({super.key, required this.color});
+  const Top({Key? key, required this.color}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +17,7 @@ class Top extends StatelessWidget {
 
 class Middle extends StatelessWidget {
   final Color color;
-  const Middle({super.key, required this.color});
+  const Middle({Key? key, required this.color}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +27,7 @@ class Middle extends StatelessWidget {
 
 class Bottom extends StatelessWidget {
   final Color color;
-  const Bottom({super.key, required this.color});
+  const Bottom({Key? key, required this.color}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

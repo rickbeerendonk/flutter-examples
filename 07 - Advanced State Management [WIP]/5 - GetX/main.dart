@@ -16,14 +16,16 @@ class CounterApp extends StatelessWidget {
   const CounterApp({required this.controller, super.key});
   @override
   Widget build(BuildContext context) {
-    return Obx(() => Column(
-      children: [
-        Text('Count: ${controller.count}'),
-        ElevatedButton(
-          onPressed: controller.increment,
-          child: const Text('Increment'),
-        ),
-      ],
-    ));
+    return Obx(
+      () => Column(
+        children: [
+          Text('Count: ${controller.count}'),
+          ElevatedButton(
+            onPressed: controller.increment,
+            child: const Text('Increment'),
+          ),
+        ],
+      ),
+    );
   }
 }
