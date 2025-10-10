@@ -1,10 +1,16 @@
+// European Union Public License version 1.2
+// Copyright © 2025 Rick Beerendonk
+
 import 'package:flutter/widgets.dart';
 
 void main() {
   runApp(
-    Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [Text('Column'), SizedBox(height: 16), Icon(Icons.star)],
+    Directionality(
+      textDirection: TextDirection.ltr,
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: const [Text('1'), Text('2'), Text('3')],
+      ),
     ),
   );
 }
