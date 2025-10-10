@@ -5,7 +5,14 @@ import 'package:flutter/widgets.dart';
 
 void main() {
   runApp(
+    // Container:
+    // - Rectangular visual element
+    // - With alignment, size, color, and child widget
+
+    // Note: Container tries to be as big as its parent allows
+    // If you want to limit the size, wrap it in a SizedBox or Constrained
     Container(
+      alignment: Alignment.center,
       color: const Color.fromARGB(255, 124, 196, 254),
       width: 200,
       height: 200,
