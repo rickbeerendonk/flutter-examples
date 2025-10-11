@@ -25,11 +25,33 @@ doc/api/
 *.js.map
 
 #################
+## Flutter
+#################
+
+
+**/ios/Flutter/.last_build_id
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+#################
 ## IntelliJ
 #################
 
+*.iml
+*.ipr
+*.iws
 .idea/
-demo.iml
+
+#################
+## Android Studio
+#################
+
+/android/app/debug
+/android/app/profile
+/android/app/release
 
 #################
 ## Temp Files
@@ -54,3 +76,23 @@ $RECYCLE.BIN/
 
 # Mac crap
 .DS_Store
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
