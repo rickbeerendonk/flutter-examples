@@ -1,0 +1,26 @@
+// European Union Public License version 1.2
+// Copyright © 2025 Rick Beerendonk
+
+import 'package:flutter/widgets.dart';
+import 'greeting.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return WidgetsApp(
+      color: const Color(0xFFFFFFFF),
+      builder: (context, child) {
+        return Directionality(
+          textDirection: TextDirection.ltr,
+          child: Greeting(name: 'World'),
+        );
+      },
+    );
+  }
+}
