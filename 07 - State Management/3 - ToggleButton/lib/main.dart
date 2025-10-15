@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(const ToggleButton());
+void main() => runApp(MaterialApp(home: const ToggleButton()));
 
 class ToggleButton extends StatefulWidget {
   const ToggleButton({super.key});

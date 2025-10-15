@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(const CounterApp());
+void main() => runApp(MaterialApp(home: const CounterApp()));
 
 class CounterApp extends StatefulWidget {
   const CounterApp({super.key});
@@ -16,7 +16,7 @@ class _CounterAppState extends State<CounterApp> {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Text('Count: _counter'),
+        Text('Count: $_counter'),
         ElevatedButton(onPressed: _increment, child: const Text('Increment')),
       ],
     );

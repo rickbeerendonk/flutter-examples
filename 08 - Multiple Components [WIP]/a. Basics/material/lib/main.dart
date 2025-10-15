@@ -5,4 +5,5 @@ import 'package:flutter/material.dart';
 
 import 'greeting_editor.dart';
 
-void main() => runApp(const MaterialApp(home: GreetingEditor()));
+void main() =>
+    runApp(const MaterialApp(home: Scaffold(body: GreetingEditor())));
