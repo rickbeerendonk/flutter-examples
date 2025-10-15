@@ -1,7 +1,7 @@
 // European Union Public License version 1.2
 // Copyright © 2025 Rick Beerendonk
 
-import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
 
 void main() {
   runApp(MyApp());
@@ -46,7 +46,7 @@ class ThemeProvider extends InheritedWidget {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return WidgetsApp(
+    return MaterialApp(
       color: const Color(0xFFFFFFFF),
       // The builder is called to build the widget tree
       builder: (context, child /* not used */) {
@@ -61,10 +61,7 @@ class MyApp extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
           ),
-          child: const Directionality(
-            textDirection: TextDirection.ltr,
-            child: ThemedContent(),
-          ),
+          child: ThemedContent(),
         );
       },
     );
