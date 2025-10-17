@@ -31,6 +31,8 @@ class _GreetingEditorState extends State<GreetingEditor> {
           children: [
             EditBox(onChange: _handleChange, value: _name),
             const SizedBox(height: 16),
+            EditBox(onChange: _handleChange, value: _name),
+            const SizedBox(height: 16),
             Greeting(name: _name),
           ],
         ),
