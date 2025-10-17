@@ -47,7 +47,7 @@ class HomePage extends StatelessWidget {
             ListTile(
               title: const Text('A'),
               onTap: () {
-                Navigator.pushNamed(context, '/a');
+                Navigator.of(context).pushNamed('/a');
               },
             ),
           ],
