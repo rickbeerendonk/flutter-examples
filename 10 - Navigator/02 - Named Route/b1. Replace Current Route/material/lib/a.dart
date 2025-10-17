@@ -24,9 +24,7 @@ class A extends StatelessWidget {
               // - After completing a task, replace task screen with result screen
               // - After submitting a form, replace form screen with confirmation screen
               // - After a payment, replace payment screen with receipt screen
-              Navigator.of(context).pushReplacement(
-            MaterialPageRoute(builder: (_) => const B()),
-          ),
+              Navigator.of(context).pushReplacementNamed('/b'),
           child: const Text('Go to B (replace A)'),
         ),
       ],
