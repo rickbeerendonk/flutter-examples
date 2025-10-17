@@ -10,7 +10,7 @@ class A extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       // AppBar will show a back button automatically
-      appBar: AppBar(title: const Text('Page 1')),
+      appBar: AppBar(title: const Text('Page A')),
       body: const Center(child: Text('A')),
     );
   }
