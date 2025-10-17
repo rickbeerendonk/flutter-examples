@@ -4,16 +4,19 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MediaQueryDemo());
+  runApp(const App());
 }
 
-class MediaQueryDemo extends StatelessWidget {
-  const MediaQueryDemo({super.key});
+class App extends StatelessWidget {
+  const App({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: MediaQueryScreen(),
+    return MaterialApp(
+      themeMode: ThemeMode.system,
+      theme: ThemeData.light(),
+      darkTheme: ThemeData.dark(),
+      home: const MediaQueryScreen(),
     );
   }
 }
@@ -29,7 +32,6 @@ class MediaQueryScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('MediaQuery Demo'),
-        backgroundColor: Colors.blue,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
