@@ -35,6 +35,7 @@ doc/api/
 .pub/
 /build/
 /coverage/
+devtools_options.yaml
 
 #################
 ## IntelliJ
